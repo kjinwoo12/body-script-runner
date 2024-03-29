@@ -1,2 +1,20 @@
 # body-script-runner
-run javascript on innerText like template language of Django.
+It is for using electon-side code in HTML. It makes possible to run javascript code on the HTML like below.
+```html
+<!--*.html-->
+<div>- version info -</div>
+    chrome : {%process.versions.chrome%}, node : {%process.versions.node%}, electron : {%process.versions.electron%}
+</div>
+```
+```html
+<!--result-->
+<div>- version info -</div>
+        chrome : 122.0.6261.139, node : 20.9.0, electron : 29.1.6
+</div>
+```
+
+It looks like template language of Django. You can use and customize prefix `{%` and suffix `%}` of script like below.
+```javascript
+//preLoad.js
+bodyScriptRunner.run(document.getElementsByTagName("body")[0], "%%"/**/, "##"/**/)
+```
