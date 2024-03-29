@@ -2,12 +2,14 @@
 It is for using electon-side code in HTML. It makes possible to run javascript code on the HTML like below.
 ```html
 <!--*.html-->
+<div>
 <div>- version info -</div>
     chrome : {%process.versions.chrome%}, node : {%process.versions.node%}, electron : {%process.versions.electron%}
 </div>
 ```
 ```html
 <!--result-->
+<div>
 <div>- version info -</div>
         chrome : 122.0.6261.139, node : 20.9.0, electron : 29.1.6
 </div>
