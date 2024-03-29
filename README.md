@@ -1,5 +1,5 @@
 # body-script-runner
-It is for using electon-side code in HTML. It makes possible to run javascript code on the HTML like below.
+It is for using javascript code in innerHTML. It makes possible to run javascript code on the HTML like below.
 ```html
 <!--*.html-->
 <div>
