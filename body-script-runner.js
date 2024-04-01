@@ -20,9 +20,9 @@ class BodyScriptRunner {
         }
         const regexStr = this.prefix + "[^"+this.prefix+"|^"+this.suffix+"]*" + this.suffix
         const regex = new RegExp(regexStr, "g")
-        const matchedTextArr = element.innerText.match(regex)
+        const matchedTextArr = element.innerHTML.match(regex)
         for(const text of matchedTextArr) {
-            element.innerText = element.innerText.replace(text, eval(text.replace(this.prefix,"").replace(this.suffix,"")))
+            element.innerHTML = element.innerHTML.replace(text, eval(text.replace(this.prefix,"").replace(this.suffix,"")))
         }
     }
 }
