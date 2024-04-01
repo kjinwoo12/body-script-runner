@@ -17,6 +17,5 @@ It is for using javascript code in innerText. It makes possible to run javascrip
 
 It looks like template language of Django. You can use and customize prefix `{%` and suffix `%}` of script like below.
 ```javascript
-//preLoad.js
 bodyScriptRunner.run(document.getElementsByTagName("body")[0], "%%"/**/, "##"/**/)
 ```
